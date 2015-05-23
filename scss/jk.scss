@@ -1,0 +1,102 @@
+//jk custom scss
+
+
+//basic stuff
+body{
+	// background:red;
+	// font-family:"open-sans";
+	// background:red;
+}
+
+
+//layout stuff
+.content-area{
+	margin:100% 0;
+}
+
+//headings
+
+.fancy {
+  font-family: "lust-script";
+}
+
+
+
+// h1.fancy {
+//   font-family: "lust-script";
+// }
+
+.hero h2{
+	// font-family: "lust-script";	
+	text-align:center;
+	margin:4% auto;
+	font-size:80px;
+}
+
+h3{
+	margin: 2% auto;
+ 	text-align: center;
+ 	font-size: 40px;
+}
+
+h4{
+	margin: 2% auto;
+ 	text-align: center;
+ 	font-size: 40px;
+ 	// font-family: "lust-script";
+}
+
+
+
+//nav stuff
+
+.top-bar{
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.top-bar-section ul li a.soc-link{
+	line-height: 2.8rem !important;
+	// padding:0 !important;
+	margin:0 !important;
+	font-size:24px;
+}
+
+
+//hero stuff
+.hero-intro{
+	margin-top:40px;
+}
+
+
+//masonry
+.masonry{
+	margin:10px auto;
+}
+.masonry .item {
+	width:250px;
+	height:200px;
+ 	float: left;
+ 	margin: 15px auto;
+ 	background: #D26;
+ 	border: 2px solid #333;
+ 	// border-color: hsla(0, 0%, 0%, 0.5);
+ 	border-radius: 4px;
+}
+
+
+//CTAs
+a.btn{
+	border:2px solid #efefef;
+	padding:20px;
+	margin:10px 0;
+	display:block;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:100;
+}
+
+//footer
+footer{
+	color:#efefef;
+	background:#666;
+}
