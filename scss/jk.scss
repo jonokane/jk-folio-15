@@ -3,9 +3,6 @@
 
 //basic stuff
 body{
-	// background:red;
-	// font-family:"open-sans";
-	// background:red;
 }
 
 
@@ -15,19 +12,11 @@ body{
 }
 
 //headings
-
 .fancy {
   font-family: "lust-script";
 }
 
-
-
-// h1.fancy {
-//   font-family: "lust-script";
-// }
-
 .hero h2{
-	// font-family: "lust-script";	
 	text-align:center;
 	margin:4% auto;
 	font-size:80px;
@@ -43,7 +32,11 @@ h4{
 	margin: 2% auto;
  	text-align: center;
  	font-size: 40px;
- 	// font-family: "lust-script";
+}
+
+.item h5{
+	text-align:center;
+	font-weight:200;
 }
 
 
@@ -53,7 +46,6 @@ h4{
 .top-bar{
 	background: rgba(0, 0, 0, 0.8);
 }
-
 .top-bar-section ul li a.soc-link{
 	line-height: 2.8rem !important;
 	// padding:0 !important;
@@ -68,19 +60,34 @@ h4{
 }
 
 
-//masonry
+//masonry & layout
 .masonry{
 	margin:10px auto;
 }
 .masonry .item {
 	width:250px;
-	height:200px;
- 	float: left;
+	// height:200px;
+ 	// float: left;
+ 	// display:block;
+ 	min-height:194px;
  	margin: 15px auto;
- 	background: #D26;
- 	border: 2px solid #333;
+ 	// background: #fff;
+ 	border: 1px solid #efefef;
+ 	padding:10px;
  	// border-color: hsla(0, 0%, 0%, 0.5);
- 	border-radius: 4px;
+ 	// border-radius: 4px;
+}
+
+a .item{
+	transition:all 1s;
+}
+a .item:hover{
+	zoom:1.2;
+	transition:all 1s;
+}
+
+.looking{
+	margin-top:8%;
 }
 
 
@@ -92,7 +99,8 @@ a.btn{
 	display:block;
 	text-align:center;
 	text-transform:uppercase;
-	font-weight:100;
+	font-weight:200;
+	font-size:20px;
 }
 
 //footer
