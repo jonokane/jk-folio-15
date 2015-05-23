@@ -94,7 +94,7 @@ h4{
 
 
 //CTAs
-a.btn{
+a.btn.ghost{
 	border:2px solid #efefef;
 	padding:20px;
 	margin:10px 0;
@@ -103,6 +103,11 @@ a.btn{
 	text-transform:uppercase;
 	font-weight:200;
 	font-size:20px;
+	transition:all .2s ease-out;
+}
+a.btn.ghost:hover{
+	transform: scale(1.1);
+	background: #efefef;
 }
 
 //footer

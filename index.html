@@ -76,10 +76,10 @@
     </div>
     <div class="row">
         <div class="medium-4 medium-offset-2 columns">
-            <a href="#work" class="btn smoothscroll">Check Out My Work</a>
+            <a href="#work" class="btn ghost smoothscroll">Check Out My Work</a>
         </div>
         <div class="medium-4 columns">
-            <a href="#contact" class="btn smoothscroll">Hit Me Up</a>
+            <a href="#contact" class="btn ghost smoothscroll">Hit Me Up</a>
         </div>
         <div class="medium-2 columns">
             <!-- <a href="#contact" class="btn smoothscroll">Hit Me Up</a> -->
@@ -93,73 +93,73 @@
                 <h3 class="fancy">Work</h3>
                 <div class="row">
                     <div class="masonry js-masonry" id="folio-grid">
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-fluence-marketing">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Fluence.io (Marketing Site)</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-fluence-app">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Fluence.io (Web App)</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-shift">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Shift</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-saratoga-speed">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Saratoga Speed</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-telenav">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Telenav</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-huddleup">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>HuddleUp</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-breeze">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Breeze</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-intuit">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Intuit</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-ybubbles">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Yahoo! Bubbles</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-thingsly">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Thingsly</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-ydn">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Yahoo! YDN</h5>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#" data-reveal-id="modal-box" class="modal-cta folio-ydpl">
                             <div class="item">
                                 <img src="http://placehold.it/250x150" alt="" class="">
                                 <h5>Yahoo! Design Pattern Library</h5>
@@ -177,6 +177,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="row">
             <div class="large-4 columns">
@@ -190,45 +191,77 @@
             </div>
         </div>
     </footer>
+
+
+<div id="modal-box" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+
+</div>
+
+
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
-    <script src="js/ss-sociak.js"></script>
+    <script src="js/ss-social.js"></script>
     <script src="js/app.js"></script>
-    <script>
-    docReady(function() {
 
-        var container = document.querySelector('#folio-grid');
-        var msnry = new Masonry(container, {
-            // columnWidth: 280,
-            isFitWidth: true,
-            isInitLayout: false
-        });
+<script>
 
-        msnry._isLayoutInited = true;
-        msnry.layout();
+$('.folio-fluence-marketing').click(function() {
+    $('#modal-box').load('folio-content/folio-fluence-marketing.html');
+});
+
+$('.folio-fluence-app').click(function() {
+    $('#modal-box').load('folio-content/folio-fluence-app.html');
+});
+
+$('.folio-shift').click(function() {
+    $('#modal-box').load('folio-content/folio-shift.html');
+});
+
+$('.folio-saratoga-speed').click(function() {
+    $('#modal-box').load('folio-content/folio-saratoga-speed.html');
+});
+
+$('.folio-telenav').click(function() {
+    $('#modal-box').load('folio-content/folio-telenav.html');
+});
+
+$('.folio-huddleup').click(function() {
+    $('#modal-box').load('folio-content/folio-huddleup.html');
+});
+
+$('.folio-breeze').click(function() {
+    $('#modal-box').load('folio-content/folio-breeze.html');
+});
+
+$('.folio-intuit').click(function() {
+    $('#modal-box').load('folio-content/folio-intuit.html');
+});
+
+$('.folio-ybubbles').click(function() {
+    $('#modal-box').load('folio-content/folio-ybubbles.html');
+});
+
+$('.folio-thingsly').click(function() {
+    $('#modal-box').load('folio-content/folio-thingsly.html');
+});
+
+$('.folio-ydn').click(function() {
+    $('#modal-box').load('folio-content/folio-ydn.html');
+});
+
+$('.folio-ydpl').click(function() {
+    $('#modal-box').load('folio-content/folio-ydpl.html');
+});
 
 
-        //smooth scroll
-        $(function() {
-            $('.smoothscroll').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var $target = $(this.hash);
-                    $target = $target.length ? $target : $('[name=' + this.hash.slice(1) + ']');
-                    if ($target.length) {
-                        var targetOffset = $target.offset().top - 100;
-                        $('html,body').animate({
-                            scrollTop: targetOffset
-                        }, 600, "easeInOutSine");
-                        return false;
-                    }
-                }
-            });
-        });
 
-    });
-    </script>
+
+
+</script>
+
 </body>
-
 </html>
