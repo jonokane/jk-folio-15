@@ -109,10 +109,10 @@ footer h6{
 }
 .item:hover{
 	transform: scale(1.2);
-	border-color:$med-gray;
+	border-color:$gray-med;
 	.thumb{
 		background-size: 140%;
-		background-position: 26% 10%;
+		// background-position: 26% 10%;
 	}
 }
 
@@ -123,7 +123,7 @@ footer h6{
 
 //CTAs
 a.btn.ghost{
-	border:1px solid $dark-gray;
+	border:1px solid $gray-dark;
 	padding:20px;
 	margin:10px 0;
 	display:block;
@@ -175,7 +175,36 @@ a.btn.ghost:hover{
 	h2{
 		font-size:3rem;
 		font-weight:200;
+		width:100%;
+		border-bottom:1px solid $gray-med-med;
+		margin-bottom: 2rem;
 	}
+	dt{
+		width:100%;
+		border-bottom:1px solid $gray-light;
+		
+	}
+	dt:not:first-child{
+		margin-top:1rem;
+	}
+}
+
+.folio-slider{
+	list-style: none !important;
+	img{
+		padding:10px;
+		border:1px solid $gray-light;
+	}
+	.caption{
+		// text-transform:uppercase;
+		font-size:.7rem;
+		// font-weight:200;
+		color:$gray-med;
+	}
+}
+
+.skills li{
+	
 }
 
 
@@ -185,16 +214,16 @@ a.btn.ghost:hover{
 
 //forms
 ::-webkit-input-placeholder {
-   color: $dark-gray;
+   color: $gray-dark;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: $dark-gray;  
+   color: $gray-dark;  
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $dark-gray;  
+   color: $gray-dark;  
 }
 :-ms-input-placeholder {  
-   color: $dark-gray;  
+   color: $gray-dark;  
 }
 
 
@@ -203,7 +232,7 @@ footer{
 	font-weight:200;
 	padding-top:20px;
 	color:#efefef;
-	background:$dark-gray;
+	background:$gray-dark;
 	p{
 		font-weight:200;
 	}
