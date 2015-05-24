@@ -60,8 +60,16 @@ footer h6{
 .top-bar{
 	// background: rgba(44, 43, 50, 0.9);
 }
+
+
+
+
+
 .top-bar-section li:not(.has-form) a:not(.button){
-	background:transparent;
+	background:none;
+}
+.top-bar-section ul li{
+	background:none;
 }
 .top-bar-section ul li a.soc-link{
 	line-height: 2.8rem !important;
