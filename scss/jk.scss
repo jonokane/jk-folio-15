@@ -175,7 +175,12 @@ a.btn.ghost:hover{
     
 }
 
-
+.btn-mini-ghost{
+	font-weight:200;padding:4px;border:1px solid #efefef;border-radius:4px;  margin-bottom: .5rem; display: inline-block;
+	.ss-icon{
+		font-weight:700;
+	}
+}
 
 
 
