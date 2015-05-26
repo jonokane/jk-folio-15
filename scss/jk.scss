@@ -17,10 +17,13 @@ a{
 .content-area{
 	// margin:20% 0;
 	border-top:1px solid $highlight-turq;
+	background:rgba(255, 255, 255, 0.9);
+	margin-bottom:4%;
 }
 
 //visual and other layout stuff
 .main-start{
+	background:rgba(255, 255, 255, 0.9);
 	border-top: 1px solid $highlight-turq;
 	padding: 2% 0 4%;
 	margin-bottom: 4%;
@@ -94,12 +97,15 @@ footer h6{
 	font-size:24px;
 }
 
+//bg
+.main-bg{
+	background: url('../img/bg/bg-hero.jpg');
+	background-size:cover;
+}
 
 //hero stuff
 .hero-intro{
 	// margin:4% 0;
-	background: url('../img/bg/bg-hero.jpg');
-	background-size:cover;
 }
 .hero{
 	padding:2% 4%;
@@ -120,16 +126,11 @@ footer h6{
 }
 .masonry .item {
 	width:240px;
-	// height:200px;
- 	// float: left;
- 	// display:block;
  	min-height:194px;
  	margin: 20px;
- 	// background: #fff;
+ 	background: #fff;
  	border: 1px solid #efefef;
  	padding:10px;
- 	// border-color: hsla(0, 0%, 0%, 0.5);
- 	// border-radius: 4px;
 }
 
 .item{
@@ -167,6 +168,7 @@ footer h6{
 // 	color:$highlight-turq;
 // }
 a.btn.ghost{
+	background:#fff;
 	border:1px solid $gray-dark;
 	padding:20px;
 	margin:10px 0;
@@ -259,6 +261,26 @@ a.btn.ghost:hover{
 
 
 
+//parallax
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
 
 
 
