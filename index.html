@@ -73,24 +73,24 @@
         </div>
     </section>
     <section class="main-start">
-    <div class="row">
-        <div class="large-12 columns">
-            <h4 class="fancy">Looking for a great product design lead?</h4>
+        <div class="row">
+            <div class="large-12 columns">
+                <h4 class="fancy">Looking for a great product design lead?</h4>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="medium-4 medium-offset-2 columns">
-            <a href="#work" class="btn ghost smoothscroll">Check Out My Work</a>
+        <div class="row">
+            <div class="medium-4 medium-offset-2 columns">
+                <a href="#work" class="btn ghost smoothscroll">Check Out My Work</a>
+            </div>
+            <div class="medium-4 columns">
+                <a href="#contact" class="btn ghost smoothscroll">Hit Me Up</a>
+            </div>
+            <div class="medium-2 columns">
+                <!-- <a href="#contact" class="btn smoothscroll">Hit Me Up</a> -->
+            </div>
         </div>
-        <div class="medium-4 columns">
-            <a href="#contact" class="btn ghost smoothscroll">Hit Me Up</a>
         </div>
-        <div class="medium-2 columns">
-            <!-- <a href="#contact" class="btn smoothscroll">Hit Me Up</a> -->
         </div>
-    </div>
-    </div>
-    </div>
     </section>
     <section class="content-area">
         <div class="row">
@@ -175,7 +175,6 @@
             </div>
         </div>
     </section>
-
     <section class="content-area">
         <div class="row">
             <div class="large-12 columns" id="contact">
@@ -190,34 +189,33 @@
         <div class="row">
             <div class="medium-10 medium-offset-1 columns">
                 <form>
-            <div class="row">
-                <div class="medium-6 columns">
-                    <label>Your Name
-                        <input type="text" placeholder="What's your name?">
-                    </label>
-                </div>
-                <div class="medium-6 columns">
-                    <label>Email
-                        <input type="text" placeholder="And what's your email?">
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="medium-12 columns">
-                    <label>Textarea Label
-                        <textarea placeholder="What's up?" rows="5" required></textarea>
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="medium-10 medium-offset-1 columns">
-                    <a class="btn ghost">Say Hello</a>
-                </div>
-            </div>
-        </form>
+                    <div class="row">
+                        <div class="medium-6 columns">
+                            <label>Your Name
+                                <input type="text" placeholder="What's your name?">
+                            </label>
+                        </div>
+                        <div class="medium-6 columns">
+                            <label>Email
+                                <input type="text" placeholder="And what's your email?">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <label>Textarea Label
+                                <textarea placeholder="What's up?" rows="5" required></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-10 medium-offset-1 columns">
+                            <a class="btn ghost">Say Hello</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        
     </section>
     <footer>
         <div class="row">
@@ -258,14 +256,8 @@
             </div>
         </div>
     </footer>
-
-
-<div id="modal-box" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-
-</div>
-
-
-
+    <div id="modal-box" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -275,109 +267,9 @@
     <script src="js/ss-social.js"></script>
     <script src="js/ss-glyphish-outlined.js"></script>
     <script src="js/app.js"></script>
+    <script>
 
-<script>
-$(document).ready(function(){
-
-$.ajaxSetup ({
-    cache: false
-});
-
-
-
-$( document ).ajaxComplete(function() {        
-        setTimeout(delayLoadSlick, 500);
-        function delayLoadSlick(){
-        $(window).trigger('resize');
-        $('.folio-slider').slick({
-            setPosition: 0,
-            dots: true,
-            lazyLoad: 'ondemand'
-            });
-        }   
-
-});
-
-
-
-$('.folio-fluence-marketing').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-fluence-marketing.html',
-});
-});
-
-$('.folio-fluence-app').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-fluence-app.html',
-});
-});
-
-$('.folio-shift').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-shift.html',
-});
-});
-
-$('.folio-saratoga-speed').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-saratoga-speed.html',
-});
-});
-
-$('.folio-telenav').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-telenav.html',
-});
-});
-
-$('.folio-huddleup').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-huddleup.html',
-});
-});
-
-$('.folio-breeze').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-breeze.html',
-});
-});
-
-$('.folio-intuit').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-intuit.html',
-});
-});
-
-$('.folio-ybubbles').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-ybubbles.html',
-});
-});
-
-$('.folio-thingsly').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-thingsly.html',
-});
-});
-
-$('.folio-ydn').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-ydn.html',
-});
-});
-
-$('.folio-ydpl').click(function() {
-$('#modal-box').foundation('reveal', 'open', {
-    url: 'folio-content/folio-ydpl.html',
-});
-});
-
-
-});
-</script>
-
-
-
-
+    </script>
 </body>
+
 </html>

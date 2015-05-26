@@ -4,7 +4,9 @@
 //basic stuff
 body{
 }
-
+p{
+	color:$gray-dark;
+}
 a{
 	color:$highlight-turq;
 	transition:all .3s ease-out;
@@ -26,6 +28,9 @@ a{
 }
 
 //headings
+h3, h4, h5, h6{
+	color:$gray-dark;
+}
 .fancy {
   font-family: "lust-script";
 }
@@ -103,6 +108,7 @@ footer h6{
 	color: #efefef;
 	p{
 		font-weight:200;
+		color: #efefef;
 	}
 }
 
@@ -279,6 +285,7 @@ footer{
 	background:$gray-dark;
 	p{
 		font-weight:200;
+		color: #efefef;
 	}
 
 	ul{
