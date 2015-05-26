@@ -6,32 +6,39 @@ body{
 }
 
 a{
+	color:$highlight-turq;
 	transition:all .3s ease-out;
 }
 
 
 //layout stuff
 .content-area{
-	margin:20% 0;
+	// margin:20% 0;
 	border-top:1px solid $highlight-turq;
 }
 
 //visual and other layout stuff
 .main-start{
-	border-top:1px solid $highlight-turq;
-	padding-top:4%;
+	border-top: 1px solid $highlight-turq;
+	padding: 2% 0 4%;
+	margin-bottom: 4%;
+	border-bottom: 1px solid $highlight-turq;
 }
-
 
 //headings
 .fancy {
   font-family: "lust-script";
 }
 
+  h4.fancy, h3.fancy{
+  border-bottom:1px solid $gray-light;
+  }
+
 .hero h2{
 	text-align:center;
-	margin:4% auto;
+	margin:2% auto;
 	font-size:80px;
+	color:$gray-light;
 }
 
 h3{
@@ -85,9 +92,20 @@ footer h6{
 
 //hero stuff
 .hero-intro{
-	margin:4% 0;
-
+	// margin:4% 0;
+	background: url('../img/bg/bg-hero.jpg');
+	background-size:cover;
 }
+.hero{
+	padding:2% 4%;
+	background: rgba(247, 250, 253, 0.2);
+	margin:4%;
+	color: #efefef;
+	p{
+		font-weight:200;
+	}
+}
+
 
 
 //masonry & layout
@@ -139,6 +157,9 @@ footer h6{
 
 
 //CTAs
+// a.btn{
+// 	color:$highlight-turq;
+// }
 a.btn.ghost{
 	border:1px solid $gray-dark;
 	padding:20px;
@@ -152,6 +173,7 @@ a.btn.ghost{
 }
 a.btn.ghost:hover{
 	transform: scale(1.1);
+	color:$highlight-green;
 	// background: #efefef;
 	// font-weight:500;
 	// font-size:22px;
