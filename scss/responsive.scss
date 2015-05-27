@@ -1,13 +1,18 @@
 @media #{$small-only} { 
 
+}
+
+
+
+// 
+@media(max-width:400px){
 .masonry .item{
 	width:280px;
+	margin-left:0;
+	margin-right:0;
 }
 .item .thumb {
   width: 260px;
 }
-
-
-
 
 }
