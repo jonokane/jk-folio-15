@@ -84,6 +84,7 @@ h4{
 
 .top-bar{
 	// background: rgba(44, 43, 50, 0.9);
+	height:2.85rem;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button){
@@ -91,6 +92,9 @@ h4{
 }
 .top-bar-section ul li{
 	background:none;
+}
+.top-bar-section ul li:hover{
+	// height:44px;
 }
 .top-bar-section ul li a.soc-link{
 	line-height: 2.8rem !important;
@@ -219,7 +223,11 @@ a.btn.ghost:hover{
 
 
 
-
+.ss-icon{
+	margin-right:4px;
+	position:relative;
+	top:2px;
+}
 
 
 
@@ -287,6 +295,17 @@ a.btn.ghost:hover{
 
 
 //forms
+
+.contact-form{
+	textarea, input{
+		background-color: rgba(255, 255, 255, 0.6);
+		box-shadow:none;
+		border-color: rgba(255, 255, 255, 0.6);
+	}
+
+}
+
+
 ::-webkit-input-placeholder {
    color: $gray-dark;
 }
@@ -307,7 +326,7 @@ footer{
 	border-bottom: 1px solid $highlight-turq;
 	font-weight:200;
 	padding-top:20px;
-	color:#efefef;
+	color:$gray-light;
 	background:$gray-dark;
 	h6{
 	color:#efefef;
@@ -333,5 +352,28 @@ footer{
 	}
 	a:hover{
 		color:$highlight-blue;
+	}
+	.ss-icon{
+		position: relative;
+		top: 3px;
+	}
+	.small.caps{
+		color:$gray-med-med;
+	}
+	.site-nav{
+		.ss-icon{
+			margin-right:4px;
+			top:2px;
+		}
+	}
+	.colophon{
+		p{
+			margin-bottom:0;
+			font-size:.8rem;
+		}
+		ul li{
+			margin-left:1rem;
+			font-size:.8rem;
+		}
 	}
 }
