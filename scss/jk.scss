@@ -10,8 +10,11 @@ p{
 a{
 	color:$highlight-turq;
 	transition:all .3s ease-out;
+	
 }
-
+a:hover{
+		color:$highlight-green;
+	};
 
 //layout stuff
 .content-area{
@@ -66,6 +69,7 @@ h4{
 .item h5{
 	text-align:center;
 	font-weight:200;
+	margin-top:1rem;
 }
 
 //custom text styles
@@ -89,6 +93,9 @@ h4{
 
 .top-bar-section li:not(.has-form) a:not(.button){
 	background:none;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+	color:$highlight-green;
 }
 .top-bar-section ul li{
 	background:none;
@@ -125,7 +132,6 @@ h4{
 }
 
 
-
 //masonry & layout
 .masonry{
 	margin:10px auto;
@@ -147,16 +153,28 @@ h4{
 		display:block;
 		background-size: 220%;
 		background-repeat: no-repeat;
-		background-position: 26% 40%;
+		background-position: 10% 0%;
 		transition:all .3s ease-out;
+		border:1px solid $gray-light;
+		border-radius:4px;
+
 	}
 }
 .item:hover{
 	transform: scale(1.2);
 	border-color:$highlight-green;
+	cursor:pointer;
 	.thumb{
 		background-size: 140%;
+		cursor:pointer;
 		// background-position: 26% 10%;
+	}
+}
+
+.modal-cta{
+	cursor:pointer;
+	:hover{
+		cursor:pointer;
 	}
 }
 
@@ -173,16 +191,19 @@ h4{
 // a.btn{
 // 	color:$highlight-turq;
 // }
+.main-start a.btn.ghost{
+	width:100%;
+}
 a.btn.ghost{
 	background:#fff;
 	border:1px solid $gray-dark;
 	padding:20px;
-	margin:10px 0;
-	display:block;
+	margin:10px 0px;
+	display:inline-block;
 	text-align:center;
 	text-transform:uppercase;
 	// font-weight:200;
-	font-size:20px;
+	font-size:1.5rem;
 	
 }
 a.btn.ghost:hover{
@@ -203,7 +224,6 @@ a.btn.ghost:hover{
     0%{transform: scale(1.0);}
     100% {transform: scale(1.1);}
 }
-
 
 @-webkit-keyframes pulse {
     0%{background: #fff;}
@@ -307,16 +327,16 @@ a.btn.ghost:hover{
 
 
 ::-webkit-input-placeholder {
-   color: $gray-dark;
+   color: $gray-med-med;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: $gray-dark;  
+   color: $gray-med-med;  
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $gray-dark;  
+   color: $gray-med-med;  
 }
 :-ms-input-placeholder {  
-   color: $gray-dark;  
+   color: $gray-med-med;  
 }
 
 
