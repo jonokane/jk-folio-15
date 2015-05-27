@@ -6,6 +6,7 @@
 
 // 
 @media(max-width:400px){
+
 .masonry .item{
 	width:280px;
 	margin-left:0;
@@ -13,6 +14,10 @@
 }
 .item .thumb {
   width: 260px;
+}
+
+.hero h2{
+	font-size:4rem;
 }
 
 }
