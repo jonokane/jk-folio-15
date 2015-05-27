@@ -19,6 +19,8 @@ a{
 	border-top:1px solid $highlight-turq;
 	background:rgba(255, 255, 255, 0.9);
 	margin-bottom:4%;
+	padding-bottom:4%;
+	border-bottom: 1px solid $highlight-turq;
 }
 
 //visual and other layout stuff
@@ -39,7 +41,7 @@ h3, h4, h5, h6{
 }
 
   h4.fancy, h3.fancy{
-  border-bottom:1px solid $gray-light;
+  // border-bottom:1px solid $purp-op30;
   }
 
 .hero h2{
@@ -66,15 +68,15 @@ h4{
 	font-weight:200;
 }
 
-footer h6{
-	color:#efefef;
-	font-weight:200;
-	text-transform:uppercase;
-}
-
 //custom text styles
-.thintext{
-	font-weight:200;
+// .thintext{
+// 	font-weight:200;
+// }
+.small{
+	font-size:80%;
+}
+.caps{
+	text-transform:uppercase;
 }
 
 
@@ -110,7 +112,7 @@ footer h6{
 .hero{
 	padding:2% 4%;
 	background: rgba(247, 250, 253, 0.2);
-	margin:8% 4% 4%;
+	margin:4%;
 	color: #efefef;
 	p{
 		font-weight:200;
@@ -147,7 +149,7 @@ footer h6{
 }
 .item:hover{
 	transform: scale(1.2);
-	border-color:$gray-med;
+	border-color:$highlight-green;
 	.thumb{
 		background-size: 140%;
 		// background-position: 26% 10%;
@@ -301,10 +303,19 @@ a.btn.ghost:hover{
 
 //footer
 footer{
+	border-top: 1px solid $highlight-turq;
+	border-bottom: 1px solid $highlight-turq;
 	font-weight:200;
 	padding-top:20px;
 	color:#efefef;
 	background:$gray-dark;
+	h6{
+	color:#efefef;
+	font-weight:200;
+	text-transform:uppercase;
+	border-bottom:1px solid $gray-light;
+	width:100%;
+	}
 	p{
 		font-weight:200;
 		color: #efefef;
