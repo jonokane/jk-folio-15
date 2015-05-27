@@ -109,6 +109,9 @@ h4{
 	margin:0 !important;
 	font-size:24px;
 }
+.top-bar.expanded {
+  background: $gray-dark-op90;
+}
 
 //bg
 .main-bg{
@@ -191,10 +194,11 @@ h4{
 // a.btn{
 // 	color:$highlight-turq;
 // }
-.main-start a.btn.ghost{
-	width:100%;
-}
+// .main-start a.btn.ghost{
+	
+// }
 a.btn.ghost{
+	width:100%;
 	background:#fff;
 	border:1px solid $gray-dark;
 	padding:20px;
