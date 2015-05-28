@@ -141,25 +141,25 @@
                             </a>
                             <a href="#" data-reveal-id="modal-box" class="modal-cta folio-ybubbles">
                                 <div class="item">
-                                    <div class="thumb" style="background-image:url('img/work/huddleup-thumb.jpg')"></div>
+                                    <div class="thumb" style="background-image:url('img/work/bubbles-iphone.jpg')"></div>
                                     <h5>Yahoo! Bubbles</h5>
                                 </div>
                             </a>
                             <a href="#" data-reveal-id="modal-box" class="modal-cta folio-thingsly">
                                 <div class="item">
-                                    <div class="thumb" style="background-image:url('img/work/huddleup-thumb.jpg')"></div>
+                                    <div class="thumb" style="background-image:url('img/work/thingsly-thumb.jpg')"></div>
                                     <h5>Thingsly</h5>
                                 </div>
                             </a>
                             <a href="#" data-reveal-id="modal-box" class="modal-cta folio-ydn">
                                 <div class="item">
-                                    <div class="thumb" style="background-image:url('img/work/huddleup-thumb.jpg')"></div>
+                                    <div class="thumb" style="background-image:url('img/work/ydn-thumb.jpg')"></div>
                                     <h5>Yahoo! YDN</h5>
                                 </div>
                             </a>
                             <a href="#" data-reveal-id="modal-box" class="modal-cta folio-ydpl">
                                 <div class="item">
-                                    <div class="thumb" style="background-image:url('img/work/huddleup-thumb.jpg')"></div>
+                                    <div class="thumb" style="background-image:url('img/work/ydpl-thumb.jpg')"></div>
                                     <h5>Yahoo! Design Patterns</h5>
                                 </div>
                             </a>
