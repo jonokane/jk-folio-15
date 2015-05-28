@@ -186,19 +186,19 @@
                         <div class="row">
                             <div class="medium-6 columns">
                                 <label>Your Name
-                                    <input type="text" placeholder="What's your name?" required id="name">
+                                    <input type="text" placeholder="What's your name?" required name="name" id="name">
                                 </label>
                             </div>
                             <div class="medium-6 columns">
                                 <label>Email
-                                    <input type="email" placeholder="And what's your email?" required id="email">
+                                    <input type="email" placeholder="And what's your email?" required name="email"id="email">
                                 </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="medium-12 columns">
                                 <label>Message
-                                    <textarea placeholder="So, what's up?" rows="5" required id="message"></textarea>
+                                    <textarea placeholder="So, what's up?" rows="5" required name="message" id="message"></textarea>
                                 </label>
                             </div>
                         </div>
