@@ -61,9 +61,9 @@
                     <div class="hero fade-in one">
                         <h2 class="fancy">Hi There!</h2>
                         <p>I'm <a href="http://about.me/jonokane" target="_blank">Jono Kane</a>, a San Francisco-based UX professional. Specifically, I'm a full-stack product designer, who enjoys solving product and interaction design challenges, as well as prototyping and building front-ends for mobile, web, and tablet.</p>
-                        <p>I have a passion for creating exciting and unique media experiences on all screens. My career is primarily focused on mobile-native, mobile-web and desktop experiences. That said, I am a fan of many different forms of design and always love new design challenges.
-                            <!-- Check out some of my <a href="#work" class="smoothscroll">design work</a> to get a better idea of what I do. --></p>
-                        <p>I also produce <a href="http://nokamusic.com" target="_blank">electronic music</a> and take <a href="http://flickr.com/photos/nokapixel" target="_blank">pictures</a>.</p>
+                        <p>I have a passion for creating exciting and unique media experiences on all screens. My career is primarily focused on mobile-native, mobile-web and desktop experiences.
+                        </p>
+                        <p>I also produce <a href="https://soundcloud.com/nokamusic" target="_blank">electronic music</a> and take <a href="http://flickr.com/photos/nokapixel" target="_blank">pictures</a>.</p>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@
                             </a>
                             <a href="#" data-reveal-id="modal-box" class="modal-cta folio-intuit">
                                 <div class="item">
-                                    <div class="thumb" style="background-image:url('img/work/huddleup-thumb.jpg')"></div>
+                                    <div class="thumb" style="background-image:url('img/work/intuit-thumb.jpg')"></div>
                                     <h5>Intuit</h5>
                                 </div>
                             </a>
@@ -181,29 +181,30 @@
             </div>
             <div class="row">
                 <div class="medium-10 medium-offset-1 columns contact-form">
-                    <form>
+                    <div id="contactMessage"></div>
+                    <form name="contact_form" id="JqAjaxForm">
                         <div class="row">
                             <div class="medium-6 columns">
                                 <label>Your Name
-                                    <input type="text" placeholder="What's your name?">
+                                    <input type="text" placeholder="What's your name?" required id="name">
                                 </label>
                             </div>
                             <div class="medium-6 columns">
                                 <label>Email
-                                    <input type="text" placeholder="And what's your email?">
+                                    <input type="email" placeholder="And what's your email?" required id="email">
                                 </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="medium-12 columns">
                                 <label>Message
-                                    <textarea placeholder="So, what's up?" rows="5" required></textarea>
+                                    <textarea placeholder="So, what's up?" rows="5" required id="message"></textarea>
                                 </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="medium-10 medium-offset-1 columns">
-                                <a class="btn ghost">Say Hello</a>
+                                <button class="btn ghost" value="submit">Say Hello</button>
                             </div>
                         </div>
                     </form>
@@ -222,7 +223,7 @@
                 </div>
                 <div class="large-6 columns colophon">
                     <h6>Colophon</h6>
-                    <p>This site was built with love using the following tools and frameworks:</p>
+                    <p>This site was hand-built with love and fully <a href="https://github.com/jonokane/jk-folio-15">open-source</a>, in case you're interested in seeing how I built it. I used the following fantastic tools and frameworks:</p>
                     <ul>
                         <li>Foundation</li>
                         <li>jQuery</li>
@@ -262,6 +263,36 @@
     <script src="js/ss-glyphish-outlined.js"></script>
     <script src="js/app.js"></script>
     <script>
+// jkcontact
+$(function(){
+    $("#JqAjaxForm").submit(function(e){
+       e.preventDefault();
+
+        dataString = $("#JqAjaxForm").serialize();
+
+        $.ajax({
+        type: "POST",
+        url: "emailer.php",
+        data: dataString,
+        dataType: "json",
+        success: function(data) {
+
+            if(data.email_check == "invalid"){
+                $("#contactMessage").html("<div class='errorMessage'>Sorry " + data.name + ", " + data.email + " isn't a valid email address. Give it another shot. Thanks</div>");
+            } else {
+                $("#contactMessage").html("<div class='successMessage'>Hi "+ data.name + ". Thanks for contacting me. I'll respond to you via email at " + data.email + ". Thank you.</div>");
+                $("#contactForm").hide();
+            }
+
+        }
+
+        });          
+
+    });
+});
+
+
+
     </script>
 </body>
 
