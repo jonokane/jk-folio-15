@@ -208,7 +208,8 @@ h4{
 // .main-start a.btn.ghost{
 	
 // }
-button.btn.ghost a.btn.ghost{
+button.btn.ghost, a.btn.ghost{
+	color:$highlight-turq;
 	width:100%;
 	background:#fff;
 	border:1px solid $gray-dark;
@@ -221,7 +222,7 @@ button.btn.ghost a.btn.ghost{
 	font-size:1.4rem;
 	
 }
-a.btn.ghost:hover{
+button.btn.ghost:hover, a.btn.ghost:hover{
 	transform: scale(1.1);
 	color:$highlight-green;
 	background: $light-blue-op90;
