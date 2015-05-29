@@ -47,9 +47,9 @@
                 </ul>
                 <!-- Left Nav Section -->
                 <ul class="left">
-                    <li><a href="#me" class="smoothscroll"><span class="ss-icon ss-glyphish-outline">smile</span>Me</a></li>
-                    <li><a href="#view-work" class="smoothscroll"><span class="ss-icon ss-glyphish-outline">compose</span>Work</a></li>
-                    <li><a href="#contact" class="smoothscroll"><span class="ss-icon ss-glyphish-outline">send</span>Contact</a></li>
+                    <li class="fade-in one"><a href="#me" class="smoothscroll"><span class="ss-icon ss-glyphish-outline">smile</span>Me</a></li>
+                    <li class="fade-in two"><a href="#view-work" class="smoothscroll"><span class="ss-icon ss-glyphish-outline">compose</span>Work</a></li>
+                    <li class="fade-in three"><a href="#contact" class="smoothscroll"><span class="ss-icon ss-glyphish-outline">send</span>Contact</a></li>
                 </ul>
             </section>
         </nav>
@@ -71,15 +71,15 @@
         <section class="main-start">
             <div class="row">
                 <div class="large-12 columns">
-                    <h4 class="fancy">Looking for a great product design lead?</h4>
+                    <h4 class="fancy fade-in one">Looking for a great product design lead?</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="large-5 large-offset-1 columns">
-                    <a href="#view-work" class="btn ghost smoothscroll">Check Out My Work</a>
+                    <a href="#view-work" class="btn ghost smoothscroll fade-in two">Check Out My Work</a>
                 </div>
                 <div class="large-5 columns">
-                    <a href="#contact" class="btn ghost smoothscroll">Hit Me Up</a>
+                    <a href="#contact" class="btn ghost smoothscroll fade-in three">Hit Me Up</a>
                 </div>
                 <div class="large-1 columns">
                 </div>
