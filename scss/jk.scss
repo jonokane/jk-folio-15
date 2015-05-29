@@ -34,6 +34,10 @@ a:hover{
 	margin-bottom: 4%;
 	border-bottom: 1px solid $highlight-turq;
 }
+.sep-bar{
+	margin:0 10px;
+	color:$gray-med-med;
+}
 
 //headings
 h3, h4, h5, h6{
@@ -201,6 +205,27 @@ h4{
 .folio-ybubbles .thumb{
 	background-position:50% 0%;
 }
+
+.folio-telenav .thumb{
+	background-position:0% 0%;
+	background-size: 210%;
+}
+
+.folio-saratoga-speed .thumb{
+	background-position:0% 0%;
+	background-size: 160%;
+}
+.folio-huddleup .thumb{
+	background-position:17% 0%;
+	// background-size: 160%;
+}
+
+.folio-huddleup .item:hover .thumb{
+	background-position:32% 0%;
+	// background-size: 160%;
+}
+
+
 
 
 
