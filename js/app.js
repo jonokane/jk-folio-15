@@ -120,4 +120,35 @@ $(document).ready(function() {
         });
     });
 
+
+// jkcontact
+$(function(){
+    $("#JqAjaxForm").submit(function(e){
+       e.preventDefault();
+
+        dataString = $("#JqAjaxForm").serialize();
+
+        $.ajax({
+        type: "POST",
+        url: "emailer.php",
+        data: dataString,
+        dataType: "json",
+        success: function(data) {
+
+            if(data.email_check == "invalid"){
+                $("#contactMessage").html("<div class='errorMessage'>Sorry " + data.name + ", " + data.email + " isn't a valid email address. Give it another shot. Thanks</div>");
+            } else {
+                $("#contactMessage").html("<div class='successMessage'>Hi "+ data.name + ". Thanks for contacting me. I'll respond to you via email at " + data.email + ". Cheers.</div>");
+                $("#JqAjaxForm").hide();
+            }
+
+        }
+
+        });          
+
+    });
+});
+
+
+
 });

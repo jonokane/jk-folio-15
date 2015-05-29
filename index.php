@@ -262,38 +262,18 @@
     <script src="js/ss-social.js"></script>
     <script src="js/ss-glyphish-outlined.js"></script>
     <script src="js/app.js"></script>
-    <script>
-// jkcontact
-$(function(){
-    $("#JqAjaxForm").submit(function(e){
-       e.preventDefault();
 
-        dataString = $("#JqAjaxForm").serialize();
+<!-- goog analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        $.ajax({
-        type: "POST",
-        url: "emailer.php",
-        data: dataString,
-        dataType: "json",
-        success: function(data) {
+  ga('create', 'UA-3037276-1', 'auto');
+  ga('send', 'pageview');
 
-            if(data.email_check == "invalid"){
-                $("#contactMessage").html("<div class='errorMessage'>Sorry " + data.name + ", " + data.email + " isn't a valid email address. Give it another shot. Thanks</div>");
-            } else {
-                $("#contactMessage").html("<div class='successMessage'>Hi "+ data.name + ". Thanks for contacting me. I'll respond to you via email at " + data.email + ". Cheers.</div>");
-                $("#JqAjaxForm").hide();
-            }
-
-        }
-
-        });          
-
-    });
-});
-
-
-
-    </script>
+</script>
 </body>
 
 </html>
