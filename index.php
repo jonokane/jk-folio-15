@@ -280,7 +280,7 @@ $(function(){
             if(data.email_check == "invalid"){
                 $("#contactMessage").html("<div class='errorMessage'>Sorry " + data.name + ", " + data.email + " isn't a valid email address. Give it another shot. Thanks</div>");
             } else {
-                $("#contactMessage").html("<div class='successMessage'>Hi "+ data.name + ". Thanks for contacting me. I'll respond to you via email at " + data.email + ". Thank you.</div>");
+                $(".contact-form").html("<div class='successMessage'>Hi "+ data.name + ". Thanks for contacting me. I'll respond to you via email at " + data.email + ". Thank you.</div>");
                 $("#contactForm").hide();
             }
 
