@@ -76,10 +76,10 @@
             </div>
             <div class="row">
                 <div class="large-5 large-offset-1 columns">
-                    <a href="#view-work" class="btn ghost smoothscroll fade-in two">Check Out My Work</a>
+                    <a href="#view-work" class="btn ghost smoothscroll two">Check Out My Work</a>
                 </div>
                 <div class="large-5 columns">
-                    <a href="#contact" class="btn ghost smoothscroll fade-in three">Hit Me Up</a>
+                    <a href="#contact" class="btn ghost smoothscroll three">Hit Me Up</a>
                 </div>
                 <div class="large-1 columns">
                 </div>
