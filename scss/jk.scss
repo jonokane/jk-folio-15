@@ -367,11 +367,25 @@ $reveal-overlay-bg-old: $black;
 
 
 
-
-.skills li{
-	
+ul.skills{
+	margin:0;
+	float:left;
+	margin-bottom: 0.3rem;
 }
 
+.skills li{
+	float:left;
+	border: 1px solid $gray-med-med;
+	border-radius: 4px;
+	margin: 2px;
+	padding: 4px 8px;
+	font-size: .7rem;
+	list-style: none;
+}
+
+dl dt{
+	clear:both;
+}
 
 
 //parallax
