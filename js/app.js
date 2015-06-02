@@ -1,4 +1,4 @@
-$(document).foundation();
+$(document).foundation({bindings: 'events'});
 
 $(document).ready(function() {
 
@@ -39,11 +39,32 @@ $(document).ready(function() {
         //instantiate slick
         function delayLoadSlick() {
             $(window).trigger('resize');
+
             $('.folio-slider').slick({
-                setPosition: 0,
-                dots: true,
-                lazyLoad: 'ondemand'
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.slider-nav'
             });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.folio-slider',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+
+
+
+
+
+            // $('.folio-slider').slick({
+            //     setPosition: 0,
+            //     dots: true,
+            //     lazyLoad: 'ondemand'
+            // });
         }
     });
 
@@ -51,12 +72,18 @@ $(document).ready(function() {
     $('.folio-fluence-marketing').click(function() {
         $('#modal-box').foundation('reveal', 'open', {
             url: 'folio-content/folio-fluence-marketing.html',
+            multiple_opened: true
         });
     });
+
+    $('.secondary-modal').click(function(){
+        
+    })
 
     $('.folio-fluence-app').click(function() {
         $('#modal-box').foundation('reveal', 'open', {
             url: 'folio-content/folio-fluence-app.html',
+            multiple_opened: true
         });
     });
 

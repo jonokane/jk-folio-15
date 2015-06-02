@@ -91,19 +91,19 @@
                     <h3 class="fancy">Work</h3>
                     <div class="row">
                         <div class="masonry js-masonry" id="folio-grid">
-                            <a href="#" data-reveal-id="modal-box" class="modal-cta folio-fluence-marketing">
+                            <a href="#" data-reveal-id="modal-box-1" class="modal-cta folio-fluence-marketing">
                                 <div class="item">
                                     <div class="thumb" style="background-image:url('img/work/fluence-marketing-thumb.png')"></div>
                                     <h5>Fluence.io (Website)</h5>
                                 </div>
                             </a>
-                            <a href="#" data-reveal-id="modal-box" class="modal-cta folio-fluence-app">
+                            <a href="#" data-reveal-id="modal-box-2" class="modal-cta folio-fluence-app">
                                 <div class="item">
                                     <div class="thumb" style="background-image:url('img/work/fluence-app-thumb.jpg')"></div>
                                     <h5>Fluence.io (Web App)</h5>
                                 </div>
                             </a>
-                            <a href="#" data-reveal-id="modal-box" class="modal-cta folio-shift">
+                            <a href="#" data-reveal-id="modal-box-3" class="modal-cta folio-shift">
                                 <div class="item">
                                     <div class="thumb" style="background-image:url('img/work/shift-thumb.jpg')"></div>
                                     <h5>Shift</h5>

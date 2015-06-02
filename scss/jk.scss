@@ -212,7 +212,7 @@ h4{
 }
 
 .folio-saratoga-speed .thumb{
-	background-position:0% 0%;
+	background-position:50% 0%;
 	background-size: 160%;
 }
 .folio-huddleup .thumb{
@@ -287,10 +287,16 @@ button.btn.ghost:hover, a.btn.ghost:hover{
 
 
 //modal
-// .reveal-modal{
-//     position : fixed;
-//     top:0;
-// }
+.reveal-modal {
+	// position: fixed;
+	// top:1px;
+}
+$reveal-position-top: 10px;
+
+$reveal-overlay-bg: rgba($black, .15);
+$reveal-overlay-bg-old: $black;
+
+
 .modal-folio-content{
 	h2{
 		font-size:3rem;
@@ -322,6 +328,45 @@ button.btn.ghost:hover, a.btn.ghost:hover{
 		color:$gray-med;
 	}
 }
+
+.slider-nav li{
+	margin:10px;
+	transition:all .3s ease-out;
+	border:3px solid $gray-med;
+	// border-radius:2px;
+	padding:6px;
+	img{
+		// border:1px solid $gray-dark;
+		// border-radius:10px;
+		width:auto;
+		height:80px;
+		max-height:80px;
+		text-align:center;
+		margin:auto;
+	}
+	
+	:hover{
+		// -webkit-animation: 
+		// grow .3s cubic-bezier(0.855, 0.120, 0.340, 0.850) 1,
+		// pulse 4s ease-out infinite alternate-reverse;
+		// border-color:$highlight-green;
+		// transform: scale(1.1);
+		// cursor:pointer;
+	}
+	
+}
+
+.slider-nav li:hover{
+		-webkit-animation: 
+		grow .3s cubic-bezier(0.855, 0.120, 0.340, 0.850) 1,
+		pulse 4s ease-out infinite alternate-reverse;
+		border-color:$highlight-green;
+		transform: scale(1.1);
+		cursor:pointer;
+	}
+
+
+
 
 .skills li{
 	
