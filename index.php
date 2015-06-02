@@ -7,8 +7,8 @@
     <title>jonokane.com - Full-stack designer</title>
     <link rel="stylesheet" href="css/ss-social-circle.css">
     <link rel="stylesheet" href="css/ss-glyphish-outlined.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+    <link rel="stylesheet" href="css/app.css?random=@Environment.TickCount">
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css?random=@Environment.TickCount">
     <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css">
     <script src="//use.typekit.net/lvb2uax.js"></script>
     <script>
